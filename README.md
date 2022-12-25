@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Getting started
 
-### 1) In the root of the project run `npm i` to install all packages and their dependencies.
+**1)** In the root of the project run `npm i` to install all packages and their dependencies.
 
-### 2) Make sure to go into the `src` folder and use the command: `sass scss:css --watch` to automtacially sync all changes from sass to css on save.
+**2)** Make sure to go into the `src` folder and use the command: `sass scss:css --watch` to automtacially sync all changes from sass to css on save.
 
-### 3) Open up a new terminal and use `npm start` to start the project.
+**3)** Open up a new terminal and use `npm start` to start the project.
 
 ## Available Scripts
 
