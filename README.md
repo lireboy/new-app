@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+make sure to go into the `src` folder and use the command: `sass scss:css --watch` to automtacially sync all changes from sass to css.
+
+## Available Scripts
+
 In the project directory, you can run:
 
 ### `npm start`
