@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Usefull information
 
-make sure to go into the `src` folder and use the command: `sass scss:css --watch` to automtacially sync all changes from sass to css.
+Make sure to go into the `src` folder and use the command: `sass scss:css --watch` to automtacially sync all changes from sass to css.
 
 ## Available Scripts
 
