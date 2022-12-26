@@ -1,3 +1,5 @@
+@use './colors' as *;
+
 .popup-container{
     opacity: 1;
     box-sizing: border-box;
@@ -14,11 +16,12 @@
     height: 100vh;
     width: 25%;
     transition: 200ms ease-in-out;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-color: rgba($primary-color,1);
+    box-shadow: -2px 0px 20px 0px #000000;
     .close-button{
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 28px;
+        right: 25px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -27,15 +30,17 @@
         width: 100%;
         
         i{
-            transform: scale(1.6);
+            transform: scale(2);
             color: white;
+            &:hover{
+                cursor: pointer;
+            }
         }
 
 
     }
     .navigations{
         margin-top: 10vh;
-        background-color: aqua;
         width: 100%;
         height: auto;
         display: flex;
@@ -48,9 +53,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: green;
             width: 100%;
             height: 100px;
+            color: white;
+            &:hover{
+                background-color: rgba($main-background-color, 0.3);
+                cursor: pointer;
+
+            }
             & > *{
                 color: white;
                 text-decoration: none;

@@ -20,15 +20,9 @@ function PopupMenu({popup, closePopup}) {
             <i className='fas fa-times' onClick={closePopup}></i>
         </div>
         <div className="navigations">
-            <div className="navigation" onClick={closePopup}>
-                <Link to="/">Home</Link>
-            </div>
-            <div className="navigation" onClick={closePopup}>
-            <Link to="/projects">Projects</Link>
-            </div>
-            <div className="navigation" onClick={closePopup}>
-            <Link to="/contact">Contact</Link>
-            </div>
+            <Link className='navigation' to="/" onClick={closePopup}>Home</Link>
+            <Link className="navigation" to="/projects" onClick={closePopup}>Projects</Link>
+            <Link className="navigation" to="/contact" onClick={closePopup}>Contact</Link>
         </div>
     </div>
   )

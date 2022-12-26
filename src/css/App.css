@@ -1,0 +1,23 @@
+h1, h2, h3, a {
+  font-family: "Raleway", sans-serif !important;
+  text-decoration: none;
+}
+
+p, button {
+  font-family: "Lato", sans-serif !important;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 26px !important;
+}
+
+h2 {
+  font-size: 24px !important;
+}
+
+a, p, button {
+  font-size: 22px !important;
+}
+
+/*# sourceMappingURL=App.css.map */

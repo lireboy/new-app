@@ -1,0 +1,23 @@
+@use './fonts' as *;
+
+h1, h2, h3, a{
+    font-family: $font-family-h !important;
+    text-decoration: none;
+}
+
+
+p, button{
+    font-family: $font-family-text !important;
+    text-decoration: none;
+}
+
+h1{
+    font-size: $font-size-h1 !important;
+}
+h2{
+    font-size: $font-size-h2 !important;
+}
+
+a, p, button{
+    font-size: $font-size-default !important;
+}

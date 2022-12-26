@@ -1,0 +1,49 @@
+@use './colors' as *;
+
+.cards{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    .card{
+        box-sizing: border-box;
+        height: auto;
+        img{
+            height: 200px;
+            object-fit: contain;          
+        }
+        .card-body{
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            .card-title{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .card-text{
+                border-top: 1px solid rgba($color: gray, $alpha: 0.5);
+                padding-top: 5px;
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 20px !important;
+                height: 130px;
+                overflow-y: auto;
+            }
+            button{
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-radius: 0px;
+                color: $primary-color;
+
+                &:hover{
+                    background-color: rgba($main-background-color, 0.2);
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.cards {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card {
+  box-sizing: border-box;
+  height: auto;
+}
+.cards .card img {
+  height: 200px;
+  object-fit: contain;
+}
+.cards .card .card-body {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.cards .card .card-body .card-title {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cards .card .card-body .card-text {
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px !important;
+  height: 130px;
+  overflow-y: auto;
+}
+.cards .card .card-body button {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  color: #041F1E;
+}
+.cards .card .card-body button:hover {
+  background-color: rgba(247, 219, 167, 0.2);
+}
+
+/*# sourceMappingURL=Cards.css.map */
