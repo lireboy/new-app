@@ -11,17 +11,26 @@
     .card{
         box-sizing: border-box;
         height: auto;
+        overflow: hidden;
         img{
             height: 200px;
-            object-fit: contain;          
+            object-fit: contain; 
+            mix-blend-mode: multiply;
+            transition: 100ms ease-in-out;
+            &:hover{
+                transform: scale(1.2);
+            }         
         }
         .card-body{
+            overflow: hidden;
             padding-bottom: 0px;
             padding-left: 0px;
             padding-right: 0px;
             .card-title{
+                overflow: hidden;
                 padding-left: 20px;
                 padding-right: 20px;
+                text-transform: uppercase;
             }
             .card-text{
                 border-top: 1px solid rgba($color: gray, $alpha: 0.5);
@@ -32,7 +41,7 @@
                 height: 130px;
                 overflow-y: auto;
             }
-            button{
+            a{
                 width: 100%;
                 background-color: transparent;
                 border: none;
@@ -47,3 +56,23 @@
         }
     }
 }
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: $secondary-color;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: $secondary-color-darker;
+  }
