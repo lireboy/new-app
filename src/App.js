@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Homepage from './Home';
 import Contact from './Contact';
 import Projects from './Projects';
@@ -7,16 +6,19 @@ import Footer from './components/Footer';
 import { Route, Routes, Link } from 'react-router-dom';
 import './css/App.css';
 
-function App() {
-  return (
-    <><><Navbar />
+const App = () => {
+  return(
+    <>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/projects' element={<Projects/>}/>
-      </Routes></>
-      <Footer /></>
-  );
+        <Route path='/projects' element={<Projects />} />
+      </Routes>
+      <Footer />
+    </>
+
+  )
 }
 
 export default App;

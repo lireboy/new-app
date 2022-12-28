@@ -3,9 +3,10 @@
 .cards{
     width: 100%;
     gap: 20px;
+    height: auto;
     display: flex;
+    flex-flow: row wrap;
     box-sizing: border-box;
-    flex-flow: row;
     align-items: center;
     justify-content: center;
     .card{
@@ -56,23 +57,3 @@
         }
     }
 }
-
-/* custom scrollbar */
-::-webkit-scrollbar {
-    width: 20px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: $secondary-color;
-    border-radius: 20px;
-    border: 6px solid transparent;
-    background-clip: content-box;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: $secondary-color-darker;
-  }

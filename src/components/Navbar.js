@@ -3,7 +3,7 @@ import PopupMenu from './PopupMenu';
 import '../css/Navbar.css';
 import { Button } from 'react-bootstrap';
 
-function Navbar() {
+const Navbar = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
@@ -14,15 +14,15 @@ function Navbar() {
       handleClick();
     }
   return (
-    <><PopupMenu popup={popup} closePopup={twoFunctions}/>
     <div className="Navbar">
+      <PopupMenu popup={popup} closePopup={twoFunctions}/>
       <div className="logo">
-        <Button variant='light'>Test</Button>
+        <Button variant='light'>Logo</Button>
       </div>
       <div className="menu-icon" onClick={twoFunctions}>
         <i class={click ? 'fas fa-bars hidden' : 'fas fa-bars'}></i>
       </div>
-    </div></>
+    </div>
   );
 }
 
